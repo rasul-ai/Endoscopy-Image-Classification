@@ -24,7 +24,6 @@ image classification on a customized 15-class version of the public
 - **Results:** the evaluation outputs and test-set scores for every model, so the statistics can be
   recomputed without a GPU or the dataset.
 
-> In the code, the model class is named `LAG`. `cgle.CGLE` is an alias for it.
 
 ## Repository structure
 
