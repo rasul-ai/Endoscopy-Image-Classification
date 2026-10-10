@@ -77,7 +77,7 @@ Tested with Python 3.11.13 and PyTorch 2.5.1+cu121 on an RTX 4090 under Ubuntu 2
 
 ## Data
 
-Download HyperKvasir and rebuild the 15-class split (8,436 / 1,059 / 1,058 images):
+Download HyperKvasir and rebuild the 15-class split (80% / 10% / 10% images):
 
 ```bash
 python data/prepare_dataset.py --hyperkvasir /path/to/hyper-kvasir-labeled-images
@@ -106,14 +106,19 @@ Run all commands from the repository root.
 ### Training
 
 ```bash
-python scripts/train.py --model cgle         --out runs/cgle           # full model
-python scripts/train.py --model global_only  --out runs/global_only    # ablations
+# Original model
+python scripts/train.py --model cgle         --out runs/cgle
+
+# Ablation models
+python scripts/train.py --model global_only  --out runs/global_only
 python scripts/train.py --model local_only   --out runs/local_only
 python scripts/train.py --model fusion_no_ca --out runs/fusion_no_ca
 
+# Baseline model
 python baselines/resnet50/train.py
 python baselines/balanced_mixup/train.py
 python baselines/divgi/train.py
+
 ```
 
 CGLE training settings in `scripts/train.py`:
