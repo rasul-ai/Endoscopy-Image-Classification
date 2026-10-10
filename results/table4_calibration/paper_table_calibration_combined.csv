@@ -1,0 +1,5 @@
+Model,Brier Score,Cal. Slope,Cal. Intercept,HL p-value
+ResNet-50,0.007,1.412,1.054,0.807
+LAG — Full Model,0.007,1.494,0.553,0.425
+DivGI — Full Model,0.008,2.509,-0.558,0.658
+Balanced-MixUp ResNet-50,0.007,1.153,0.053,0.735

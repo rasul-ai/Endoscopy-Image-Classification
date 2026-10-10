@@ -1,0 +1,2 @@
+Model,Brier Score,Cal. Slope,Cal. Intercept,HL p-value
+ResNet-50,0.007,1.412,1.054,0.807

@@ -1,0 +1,7 @@
+Model Pair,p-value
+ResNet-50 vs Proposed,0.46469000351044776
+ResNet-50 vs DivGI,0.509848852099348
+ResNet-50 vs Balanced-MixUp,0.7591487832236787
+Proposed vs DivGI,0.7099836454311417
+Proposed vs Balanced-MixUp,0.5233340852930124
+DivGI vs Balanced-MixUp,0.8262813727956814

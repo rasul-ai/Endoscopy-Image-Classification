@@ -1,0 +1,20 @@
+# Model weights are distributed separately (see checkpoints/README.md)
+*.pth
+*.pt
+
+# Virtual environment
+.venv/
+
+# Dataset images (see data/README.md)
+data/new_dataset_15/
+
+# Training / evaluation outputs
+runs/
+results/test/
+results/gradcam/
+results/external_validation/
+
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.~lock.*

@@ -1,0 +1,26 @@
+\begin{table}[htbp]
+\centering
+\caption{Macro-Averaged OvR AUC with 95\% Confidence Intervals 
+and Pairwise DeLong Statistical Comparison}
+\label{tab:auc_delong_combined}
+\small
+\begin{tabular}{lcc}
+\toprule
+\textbf{Model} & \textbf{Macro AUC} & \textbf{95\% CI (DeLong)} \\
+\midrule
+ResNet-50      & 0.9972 & [0.9951, 0.9991] \\
+Proposed       & 0.9887 & [0.9759, 0.9994] \\
+DivGI          & 0.9936 & [0.9874, 0.9992] \\
+Balanced-MixUp & 0.9939 & [0.9881, 0.9990] \\
+\midrule
+\multicolumn{3}{c}{\textbf{Pairwise DeLong Test (p-values)}} \\
+\midrule
+ResNet-50 vs Proposed & \multicolumn{2}{c}{$p = 0.4647$} \\
+ResNet-50 vs DivGI & \multicolumn{2}{c}{$p = 0.5098$} \\
+ResNet-50 vs Balanced-MixUp & \multicolumn{2}{c}{$p = 0.7591$} \\
+Proposed vs DivGI & \multicolumn{2}{c}{$p = 0.7100$} \\
+Proposed vs Balanced-MixUp & \multicolumn{2}{c}{$p = 0.5233$} \\
+DivGI vs Balanced-MixUp & \multicolumn{2}{c}{$p = 0.8263$} \\
+\bottomrule
+\end{tabular}
+\end{table}

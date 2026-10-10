@@ -1,0 +1,12 @@
+Method,Accuracy,Precision,Recall,F1-score,Code in this repo,Raw result file
+EfficientNet V2,0.822,0.818,0.748,0.747,no,
+AlexNet,0.914,0.874,0.852,0.859,no,
+MobileNetV2,0.802,0.769,0.717,0.722,no,
+DenseNet121,0.816,0.763,0.746,0.740,no,
+VGG16,0.876,0.850,0.824,0.829,no,
+ViT,0.920,0.872,0.877,0.873,no,
+ResNet50,0.927,0.892,0.871,0.879,baselines/resnet50,resnet50_test_metrics.txt
+Class Imbalance Loss,0.919,0.869,0.882,0.875,no,
+Balanced-Mixup,0.933,0.899,0.896,0.896,baselines/balanced_mixup,../table5_discrimination/metrics_discrimination_combined.csv
+DivGI,0.925,0.890,0.891,0.889,baselines/divgi,divgi_test_metrics.txt
+CGLE (Ours),0.939,0.909,0.899,0.900,cgle/ + scripts/,cgle_test_metrics.csv

@@ -1,0 +1,2 @@
+Model,AUC,95% CI (DeLong),p-value vs Ours
+ResNet-50,0.997,0.995–0.999,—
